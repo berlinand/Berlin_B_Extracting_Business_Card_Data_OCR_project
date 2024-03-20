@@ -5,7 +5,7 @@ import io
 import mysql.connector
 
 # Change the connection value in the parameter and database name
-connection=mysql.connector.connect(host='localhost',user="root",password="berlin0",database="bizcard")
+connection=mysql.connector.connect(host='localhost',user="root",password="berlin",database="bizcard")
 mycursor=connection.cursor()
 
 # This function extracts text from a given image and returns two lists based on the width of the image.
@@ -166,16 +166,16 @@ ab=co1.number_input(label="width",min_value=1,max_value=50,value=1)
 ba=co2.number_input(label="Height",min_value=1,max_value=50,value=1)
 de=st.button(label="Original Image")
 with st.sidebar: 
- slider_place6=st.empty()
- slider_place7=st.empty()
- slider_place8=st.empty() 
- slider_place9=st.empty()
  slider_place1=st.empty()
  slider_place2=st.empty()
  slider_place3=st.empty()
  slider_place4=st.empty()
  slider_place5=st.empty()
-
+ slider_place6=st.empty()
+ slider_place7=st.empty()
+ slider_place8=st.empty() 
+ slider_place9=st.empty()
+ 
 if de==False:
  sharp=slider_place1.slider(label="Sharpness",min_value=-50.0,max_value=50.0,value=1.0,key=1) 
  bright=slider_place2.slider(label="Brightness",min_value=-50.0,max_value=50.0,value=1.0,key=2)
