@@ -7,7 +7,7 @@ import pandas as pd
 
 
 # Change the connection value in the parameter and database name
-connection=mysql.connector.connect(host='localhost',user="root",password="berlin10",database="bizcard")
+connection=mysql.connector.connect(host='localhost',user="root",password="berlin",database="bizcard")
 mycursor=connection.cursor()
 
 # This function checks the value given by the user in a MySQL table and returns the matched row.
